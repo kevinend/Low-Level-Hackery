@@ -1,0 +1,21 @@
+kevin@kevin-Q550LF:~/Desktop$ ./process4 test
+Debugging this current process...
+End of this program
+Total number of instructions executed == 81174
+
+The new test program was as follows: 
+
+int main( void ) {
+
+  int x;
+  int y;
+  int temp;
+  
+  x = 10;
+  y = 11;
+  temp = x;
+  x = y;
+  y = temp;
+  
+  return 0;
+}
