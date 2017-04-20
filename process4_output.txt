@@ -1,0 +1,20 @@
+kevin@kevin-Q550LF:~/Desktop$ ./process4 test
+Debugging this current process...
+Hello World
+End of this program
+Total number of instructions executed == 141722
+
+The sample program, test.c, was a simple hello world program:
+
+#include <stdio.h> 
+#include <stdlib.h>
+
+int main( void ) {
+
+    printf( "Hello World\n" );
+    return 0;
+}
+
+The high instruction count is probably due to the initialization code of the CRT (_init), the length/complexity of printf and the exit (_exit) code for the CRT.
+
+*CRT is the C runtime library.
