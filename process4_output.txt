@@ -15,6 +15,7 @@ int main( void ) {
     return 0;
 }
 
-The high instruction count is probably due to the initialization code of the CRT (_init), the length/complexity of printf and the exit (_exit) code for the CRT.
+The high instruction count is probably due to the initialization and termination code of the CRT (_init/_exit)
+as well as the length/complexity of printf.
 
 *CRT is the C runtime library.
